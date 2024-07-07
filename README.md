@@ -177,7 +177,7 @@ Local Development
 Clone the Repository
 
 
-## git clone https://github.com/your-username/game-analytics-web-service.git
+## git clone https://github.com/Prabhratirastogi/Game-Analytics/tree/main
 
 ### Build the Docker Image
 docker-compose build
