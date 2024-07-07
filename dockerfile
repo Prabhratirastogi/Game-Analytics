@@ -18,5 +18,5 @@ COPY . /app/
 # Load environment variables from the .env file
 COPY .env /app/.env
 
-# Run Django migrations and start the application
-CMD ["sh", "-c", "python manage.py migrate && gunicorn myproject.wsgi:application --bind 0.0.0.0:8000"]
+# Run Django server when the container launches
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
