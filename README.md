@@ -34,7 +34,7 @@ The Game Analytics Web Service allows users to upload CSV files containing game 
 **Description**: Upload a CSV file for processing. The CSV file should be accessible via a public link.
 
 **Request**:
-```http
+
 POST /upload-csv/
 
 Request_Body:
@@ -53,7 +53,6 @@ Response:
 **Description**: Register a new user for authentication.
 
 **Request**:
-```http
 POST /auth/register/
 
 Request-Body:
@@ -74,7 +73,6 @@ Response:
 **Description**: Login a user to receive authentication tokens.
 
 **Request**:
-```http
 POST /auth/login/
 
 Request_Body:
@@ -95,7 +93,6 @@ Response:
 **Description**: Refresh the authentication token.
 
 **Request**:
-```http
 POST /auth/token/refresh/
 
 Request_Body:
@@ -113,7 +110,6 @@ Response:
 **Description**: Logout a user by invalidating the current token.
 
 **Request**:
-```http
 POST /auth/logout/
 
 Request_Body:
