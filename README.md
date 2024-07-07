@@ -56,7 +56,7 @@ Response:
 ```http
 POST /auth/register/
 
-Request Body:
+Request-Body:
 {
     "username": "user",
     "email": "user email",
@@ -77,7 +77,7 @@ Response:
 ```http
 POST /auth/login/
 
-Request Body:
+Request_Body:
 {
     "username": "user",
     "password": "password"
@@ -98,7 +98,7 @@ Response:
 ```http
 POST /auth/token/refresh/
 
-Request Body:
+Request_Body:
 {
     "refresh": "your_refresh_token"
 }
@@ -116,7 +116,7 @@ Response:
 ```http
 POST /auth/logout/
 
-Request Body:
+Request_Body:
 {
     "refresh": "your_refresh_token"
 }
