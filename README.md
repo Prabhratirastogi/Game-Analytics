@@ -177,13 +177,14 @@ Local Development
 Clone the Repository
 
 
-## git clone https://github.com/Prabhratirastogi/Game-Analytics/tree/main
+## git clone --branch main https://github.com/Prabhratirastogi/Game-Analytics.git
 
 ### Build the Docker Image
-docker-compose build
-Start the Services
+docker build -t prabhrati17/game-analytics-web-service:latest .           
 
-docker-compose up
+Start the Services
+docker run -p 8000:8000 prabhrati17/game-analytics-web-service:latest
+
 Access the Application
 
 Open http://localhost:8000 in your browser.
@@ -191,18 +192,10 @@ Open http://localhost:8000 in your browser.
 ### Deployment
 Create a Docker Image
 
+### Docekr images file
+https://drive.google.com/file/d/1RBiycRQKwUSWqwxb_4hzDQNvl0kJUF06/view?usp=sharing
+
 The Dockerfile and docker-compose.yml files are already configured for deployment.
-
-docker-compose build
-Deploy to a Free Cloud Tier
-
-Choose a cloud provider with a free tier (e.g., Heroku, Railway, Vercel). Follow the cloud provider’s instructions for deploying Docker images.
-
-### Deploy the Image
-Push the Docker image to a container registry if required by your cloud provider. For example, with Docker Hub:
-
-Set Up Environment Variables
-Configure environment variables on the cloud provider’s dashboard to match the .env file settings.
 
 Cost Estimate
 Service	                                  Free Tier Limit	                                 Cost per Month (if exceeded)
