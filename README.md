@@ -34,10 +34,10 @@ The Game Analytics Web Service allows users to upload CSV files containing game 
 **Description**: Upload a CSV file for processing. The CSV file should be accessible via a public link.
 
 **Request**:
-```http
+
 POST /upload-csv/
 
-Request Body:
+Request_Body:
 {
     "csv_url": "http://localhost:8000/upload-csv/"
 }
@@ -53,10 +53,9 @@ Response:
 **Description**: Register a new user for authentication.
 
 **Request**:
-```http
 POST /auth/register/
 
-Request Body:
+Request-Body:
 {
     "username": "user",
     "email": "user email",
@@ -74,10 +73,9 @@ Response:
 **Description**: Login a user to receive authentication tokens.
 
 **Request**:
-```http
 POST /auth/login/
 
-Request Body:
+Request_Body:
 {
     "username": "user",
     "password": "password"
@@ -95,10 +93,9 @@ Response:
 **Description**: Refresh the authentication token.
 
 **Request**:
-```http
 POST /auth/token/refresh/
 
-Request Body:
+Request_Body:
 {
     "refresh": "your_refresh_token"
 }
@@ -113,10 +110,9 @@ Response:
 **Description**: Logout a user by invalidating the current token.
 
 **Request**:
-```http
 POST /auth/logout/
 
-Request Body:
+Request_Body:
 {
     "refresh": "your_refresh_token"
 }
@@ -181,7 +177,7 @@ Local Development
 Clone the Repository
 
 
-## git clone https://github.com/your-username/game-analytics-web-service.git
+## git clone https://github.com/Prabhratirastogi/Game-Analytics/tree/main
 
 ### Build the Docker Image
 docker-compose build
