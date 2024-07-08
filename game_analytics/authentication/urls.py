@@ -4,11 +4,11 @@ from .views import register, login_view, logout_view
 from rest_framework_simplejwt.views import TokenRefreshView, TokenVerifyView
 
 urlpatterns = [
-    path('register/', register, name='register'),
-    path('login/', login_view, name='login_view'),
-    path('logout/', logout_view, name='logout_view'),
-    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('token/verify/', TokenVerifyView.as_view(), name='token_verify'),
+    path('auth/register/', register, name='register'),
+    path('auth/login/', login_view, name='login_view'),
+    path('auth/logout/', logout_view, name='logout_view'),
+    path('auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('auth/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
 
 ]
  
