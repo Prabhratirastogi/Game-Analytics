@@ -55,6 +55,8 @@ Response:
 **Request**:
 POST /auth/register/
 
+**url**
+http://localhost:8000/auth/auth/register/
 Request-Body:
 {
     "username": "user",
@@ -75,6 +77,8 @@ Response:
 **Request**:
 POST /auth/login/
 
+**url**
+http://localhost:8000/auth/auth/login/
 Request_Body:
 {
     "username": "user",
@@ -95,6 +99,8 @@ Response:
 **Request**:
 POST /auth/token/refresh/
 
+**url**
+http://localhost:8000/auth/auth/token/refresh/
 Request_Body:
 {
     "refresh": "your_refresh_token"
@@ -112,6 +118,9 @@ Response:
 **Request**:
 POST /auth/logout/
 
+**url**
+http://localhost:8000/auth/auth/token/logout/
+
 Request_Body:
 {
     "refresh": "your_refresh_token"
@@ -125,49 +134,82 @@ Response:
 ### 6. Query Data
 **Endpoint**: 'GET /query_data/'
 Example: /query_data/?name=TD
+
 **Description**: Get records where the name field contains the substring "TD".
+
+**url**
+http://localhost:8000/query_data/?name=TD
 
 ### 7. Get Max of Given Date
 
 **Endpoint**: 'GET /query_data/'
 Example: /query_data/?date_gt=2021-01-01
+
 **Description**: Get records with date greater than the specified date.
+
+**url**
+http://localhost:8000/query_data/?date_gt=2021-01-01
 
 ### 7. Get Age by Value
 
 **Endpoint**: 'GET /query_data/'
 Example: /query_data/?required_age=17
+
 **Description**: Get records where age is greater than or equal to 17.
+
+**url**
+http://localhost:8000/query_data/?required_age=17
 
 ### 8. Get Maximum Price
 
 **Endpoint**: 'GET /query_data/'
 Example: /query_data/?aggregate_max_price=true
+
 **Description**: Get the maximum price from the price field.
+
+**url**
+http://localhost:8000/query_data/?aggregate_max_price=true
 
 ### 9. Get Minimum Price
 
 **Endpoint**: 'GET /query_data/'
 Example: /query_data/?aggregate_min_price=true
+
 **Description**: Get the minimum price from the price field.
+
+**url**
+http://localhost:8000/query_data/?aggregate_min_price=true
 
 ### 10. Get Mean of Price
 
 **Endpoint**: `GET /query_data/`
 Example: /query_data/?aggregate_mean_price=true
+
 **Description**: Get the mean price from the price field.
+
+**url**
+http://localhost:8000/query_data/?aggregate_mean_price=true
 
 ### 11. Filter by Release Date
 
 **Endpoint**: `GET /query_data/`
 Example: /query_data/?release_date=2021-09-07
+
 **Description**: Get records with a specific release_date.
+
+**url**
+http://localhost:8000/query_data/?release_date=2021-09-07
+
 
 ### 12. Filter by Release Price
 
 **Endpoint**: `GET /query_data/`
 Example: /query_data/?price=13.99
+
 **Description**: Get records with a specific price.
+
+**url**
+http://localhost:8000/query_data/?price=13.99
 
 ### Postman Check Collection
 https://drive.google.com/file/d/1nVA4kVo9i8Jqc_56zNtCLtFB1hfdUvNl/view?usp=sharing
@@ -200,7 +242,7 @@ https://drive.google.com/file/d/1RBiycRQKwUSWqwxb_4hzDQNvl0kJUF06/view?usp=shari
 
 The Dockerfile and docker-compose.yml files are already configured for deployment.
 
-Cost Estimate
+## Cost Estimate
 Service	                                  Free Tier Limit	                                 Cost per Month (if exceeded)
 Cloud Provider	                          Free Tier Plan	                                 Costs vary depending on usage
 Database (SQLite)                       Included in free tier	                                      None
