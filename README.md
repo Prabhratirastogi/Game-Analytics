@@ -169,6 +169,9 @@ Example: /query_data/?release_date=2021-09-07
 Example: /query_data/?price=13.99
 **Description**: Get records with a specific price.
 
+### Postman Check Collection
+https://drive.google.com/file/d/1nVA4kVo9i8Jqc_56zNtCLtFB1hfdUvNl/view?usp=sharing
+
 ### Setup and Deployment
 Prerequisites
 Docker
