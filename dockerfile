@@ -15,6 +15,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the project files into the container
 COPY . /app/
 
+
+# Set the working directory to the subdirectory where manage.py is located
+WORKDIR /app/game_analytics
+
+
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
 
